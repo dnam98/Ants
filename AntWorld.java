@@ -2,7 +2,6 @@ import processing.core.PApplet;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-// Do not submit this file on Gradescope
 /**
  * This class creates a simulation of any foraging behavior based on pheromone trails.
  * 
