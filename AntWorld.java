@@ -5,7 +5,6 @@ import java.util.Iterator;
 /**
  * This class creates a simulation of any foraging behavior based on pheromone trails.
  * 
- * @author Chris
  *
  */
 public class AntWorld extends PApplet {
