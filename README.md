@@ -9,6 +9,10 @@ Ant colonies are a classic example of the concept of emergence, where a collecti
 When an ant finds food while foraging, it lays down a trail of pheromones to signal the food’s location to other ants. Other ants will then follow this pheromone trail to the food, and lay their own pheromones. Pheromones fade over time, so once a food source is exhausted and no more ants create new pheromone trails to it ants will stop searching that area. In reality, colonies of ants use a number of different types of pheromones to communicate the location of food, predators, rival colonies, and find their way home. 
 
 
+#### Summary of the behavior: 
+![image](https://user-images.githubusercontent.com/109056537/182059130-590371a7-9c07-458d-930b-ce3b8a7fb479.png)
+
+
 ## Class Types
 ### Antworld class
 This is the main driver of the program. It uses the Processing library to create a window, then create and update an ant simulation until the user stops the program.
@@ -48,9 +52,6 @@ There are several behaviors of the ant.
 7. We reached the end of a pheromone trail: and there was no food if we find a pheromone, check if we are within 0.01 of it. If we are, then we’ve reached the end of the pheromone trail and have not found any food. This pheromone trail is not useful to us, so we add its creatorID to our excludeIDs list and do nothing else.
 8. We are following a pheromone trail: if we find a pheromone and are NOT within 0.01 of it, move towards the pheromone’s coordinates and do nothing else.
 9. We are randomly searching: if we DO NOT have food and there is no food or pheromones in range, move randomly. 
-
-#### Summary of the behavior: 
-![image](https://user-images.githubusercontent.com/109056537/182059130-590371a7-9c07-458d-930b-ce3b8a7fb479.png)
 
 
 
